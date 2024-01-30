@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+var student=[
+    {
+        roll:101, 
+        name:"abc",
+        city: "baramati",
+        marks: 65.50
+    },
+    {
+        roll:102, 
+        name:"pqr",
+        city: "indapur",
+        marks: 64.50
+    },
+    {
+        roll:103, 
+        name:"lmn",
+        city: "daund",
+        marks: 60.50
+    },
+    {
+        roll:104, 
+        name:"xyz",
+        city: "phaltan",
+        marks: 75.50
+    }]
+
+
+
+    console.log('=========print array Object data============');
+    console.log(student);
+
+    console.log('=========print Object data============');
+    for(var i=0;i<student.length;i++){
+        console.log(student[i]); 
+    }
+
+    console.log('=========print data============');
+    for(var i=0;i<student.length;i++){
+        console.log(student[i].roll + " " + student[i].name + " " + student[i].city+ " " + student[i].marks); 
+    }
+    </script>
+</body>
+</html>

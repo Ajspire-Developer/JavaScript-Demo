@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+
+        function bill(){
+           var qty=parseInt(document.getElementById("qty").value)
+           var rate=parseInt(document.getElementById("rate").value)
+           var total= qty*rate
+           
+           document.getElementById("total").value=total
+        }
+
+        function disc(){
+            var total=parseInt(document.getElementById("total").value)
+            var disp=parseInt(document.getElementById("disp").value)
+            var dis=((total*disp)/100)
+            document.getElementById("disval").value=dis
+            document.getElementById("nettotal").value=(total-dis)
+
+
+        }
+    </script>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td>product</td>
+            <td>Qty</td>
+            <td>Rate</td>
+            <td>Total</td>
+            <td>Dis %</td>
+            <td>Dis Val</td>
+            <td>Net Total</td>
+        </tr>
+        <tr>
+            <td><input type="text" name="" id="pro"></td>
+            <td><input type="text" name="" id="qty" value="0"  onkeyup="bill()"></td>
+            <td><input type="text" name="" id="rate" value="0" onkeyup="bill()"></td>
+            <td><input type="text" name="" id="total" value="0"></td>
+            <td><input type="text" name="" id="disp" onkeyup="disc()"></td>
+            <td><input type="text" name="" id="disval"></td>
+            <td><input type="text" name="" id="nettotal"></td>
+        </tr>
+    </table>
+</body>
+
+</html>

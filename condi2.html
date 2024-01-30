@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+function table(){
+    var limit= parseInt(document.getElementById("no").value)
+    var no=1
+    var esum=0
+    var osum=0
+    while(no<=limit){
+        if(no%2==0){
+            esum+=no   //sum+sum+no
+            console.log(no);
+        }
+        else {
+            osum+=no
+        }
+    no++
+    }
+    console.log('====================================');
+    console.log("Even Sum="+ esum);
+    console.log("Odd Sum="+ osum);
+
+    console.log('====================================');
+
+
+}
+
+
+    </script>
+
+
+
+</head>
+
+<body>
+   Enter the no : <input type="text" name="" id="no"> <br/><br/>
+   <input type="button" value="submit" onclick="table()">
+</body>
+
+</html>

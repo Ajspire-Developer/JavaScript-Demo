@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<script>
+function valid(){
+    var pass=document.getElementById("pass").value
+    var ucase=0
+    console.log(pass);
+    for(var i=0;i<pass.length;i++)
+    {
+        if(pass[i]>='A' && pass[i]<='Z')
+        {
+        ucase+=1  //ucase=ucase+1
+        }
+    }
+    if(ucase!=0)
+    {
+        console.log("password is valid");
+    }
+    else
+    {
+        console.log("password is In-valid");
+
+    }
+
+}
+
+</script>
+
+</head>
+<body>
+    <input type="text" name="" id="pass"><br><br>
+    <input type="button" value="Submit" onclick="valid()">
+</body>
+</html>

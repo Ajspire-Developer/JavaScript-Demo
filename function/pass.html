@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        var isCapital=0
+        function valid(){
+            var pass=document.getElementById("pass").value
+           //pass validatation use minimume 1.capital 2.small 3.number
+           for(var i=0;i<pass.length;i++){
+                if(pass[i]>='A' && pass[i]<='Z'){
+                    isCapital=isCapital+1
+                }       
+            }
+
+            if(isCapital!=0)
+            {
+                console.log("valid pass");
+            }
+        }
+
+
+
+    </script>
+</head>
+<body>
+   Enter the Pass : 
+   <input type="text" name="" id="pass"> <br><br>
+   <input type="button" value="Submit" onclick="valid()">
+</body>
+</html>

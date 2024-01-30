@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Sum Calculator</title>
+</head>
+<body>
+
+    <script>
+        let sum = 0;
+        let addMore = true;
+
+        do {
+            // Take input value from the user
+            let inputValue = parseInt(prompt("Enter a number:"));
+
+            // Check if the input is a valid number
+            if (!isNaN(inputValue)) {
+                // Add the valid input to the sum
+                sum += inputValue;
+
+                // Ask if the user wants to add more
+                addMore = confirm("Do you want to add more numbers?");
+            } else {
+                alert("Invalid input. Please enter a valid number.");
+            }
+
+        } while (addMore);
+
+        // Display the sum of all input values
+        alert("The sum of all input values is: " + sum);
+    </script>
+
+</body>
+</html>

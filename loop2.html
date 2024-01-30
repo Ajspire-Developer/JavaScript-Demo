@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<script>
+
+function calculation(){
+
+    var limit= parseInt(document.getElementById("limit").value)
+    var candition= parseInt(document.getElementById("candition").value)
+    var sum=0
+
+    if(candition==1){
+        for(var i=0;i<=limit;i++)
+        
+        sum=sum+i
+        alert("Sum=" + sum)
+
+    }
+    else if(candition==2){
+        for(var i=0;i<=limit;i++)       
+      
+        console.log(i); 
+        
+    }
+    else if(candition==3){
+        for(var i=limit;i>=1;i--)       
+      
+      console.log(i); 
+    }
+    else{
+        alert("invalid choice")
+    }
+    
+}
+
+</script>
+
+</head>
+<body>
+    Enter The Limit : <input type="text" name="" id="limit"> <br/><br/>
+1 . Sum 2.Serise Asc 3.Serise Dsc
+Enter Your Choice <input type="text" name="" id="candition">
+<input type="button" value="Submit" onclick="calculation()"><br/><br/>
+<p id="ans"></p>
+</body>
+</html>

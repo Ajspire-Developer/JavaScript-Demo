@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<script>
+function addition(){
+
+var a=parseInt(document.getElementById("a").value)
+var b=parseInt(document.getElementById("b").value)
+// alert("a="+ a)
+// alert("b="+ b)
+
+document.getElementById("ans").value=a+b
+
+}
+</script>
+
+</head>
+<body>
+A value : <input type="text" name="a" id="a"> <br/><br/>
+B value : <input type="text" name="b" id="b"><br/><br/>
+<input type="button" value="Click me"  onclick="addition()"><br/><br/>
+Ans : <input type="text" name="ans" id="ans">
+
+    
+</body>
+</html>
